@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/mPiflJx1M0VUsoeLDc90MEAvdGS6DxS43L+7LRYJAJv9K+QDHwrAf7jNG4F0OHWl2n9JA5r1EMY3hACS26ZAQ==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\azmeena.narsingani\\source\\repos\\githubactionssql\\GitHubActionsProject\\GitHubActionsProject.sqlproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\azmeena.narsingani\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\azmeena.narsingani\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

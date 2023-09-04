@@ -1,0 +1,10 @@
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\bin\Debug\GitHubActionsProject.dacpac
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\bin\Debug\GitHubActionsProject.dll
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\bin\Debug\GitHubActionsProject.pdb
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\obj\Debug\GitHubActionsProject.sqlproj.AssemblyReference.cache
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\obj\Debug\Model.xml
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\obj\Debug\refactor.xml
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\obj\Debug\postdeploy.sql
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\obj\Debug\predeploy.sql
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\obj\Debug\GitHubActionsProject.dll
+c:\Users\azmeena.narsingani\source\repos\githubactionssql\GitHubActionsProject\obj\Debug\GitHubActionsProject.pdb
