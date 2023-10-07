@@ -25,6 +25,8 @@ jobs:
     # Find msbuild
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.3.1
+    - name: Setup MSBuild and .NET Framework
+      uses: warrenbuckley/Setup-MSBuild@v1
       # create dacpac using MSBUILD
     - name: Build Database project
       run: |
