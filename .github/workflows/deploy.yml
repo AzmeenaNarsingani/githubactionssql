@@ -22,25 +22,12 @@ jobs:
         tenant-id: ${{ secrets.AZURE_TENANT_ID }}
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         enable-AzPSSession: true 
-    # Find msbuild
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1.3.1
-    - name: Setup MSBuild and .NET Framework
-      uses: warrenbuckley/Setup-MSBuild@v1
-      # create dacpac using MSBUILD
-    - name: Build Database project
-      run: |
-          msbuild.exe ./GitHubActionsProject/GitHubActionsProject.sqlproj /p:Configuration=Release
-      # Publish artifact
-    - uses: actions/upload-artifact@v3.1.2
-      with:
-        name: SQLDB
-        path: ${{ github.workspace }}/bin/Release/ 
     - uses: azure/sql-action@v2
       with:
         connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
         path: './GitHubActionsProject/bin/Debug/GitHubActionsProject.dacpac'
         action: 'Publish'
+        build-arguments: '-c Release' # Optional build options passed to dotnet build
     # Azure logout 
     - name: logout
       run: |
