@@ -22,6 +22,18 @@ jobs:
         tenant-id: ${{ secrets.AZURE_TENANT_ID }}
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         enable-AzPSSession: true 
+    # Find msbuild
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.3.1
+      # create dacpac using MSBUILD
+    - name: Build Database project
+      run: |
+          msbuild.exe GitHubActionsProject.sqlproj /p:Configuration=Release
+      # Publish artifact
+    - uses: actions/upload-artifact@v3.1.2
+      with:
+        name: SQLDB
+        path: ${{ github.workspace }}/bin/Release/ 
     - uses: azure/sql-action@v2
       with:
         connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
