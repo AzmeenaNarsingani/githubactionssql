@@ -25,9 +25,10 @@ jobs:
     - uses: azure/sql-action@v2
       with:
         connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-        path: './GitHubActionsProject/bin/Debug/GitHubActionsProject.dacpac'
+        path: './GitHubActionsProject/GitHubActionsProject.sqlproj'
         action: 'Publish'
         build-arguments: '-c Release' # Optional build options passed to dotnet build
+       #path: './GitHubActionsProject/bin/Debug/GitHubActionsProject.dacpac'
     # Azure logout 
     - name: logout
       run: |
