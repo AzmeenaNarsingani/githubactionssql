@@ -27,11 +27,12 @@ jobs:
         connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
         path: './GitHubActionsProject/GitHubActionsProject.sqlproj'
         action: 'DeployReport'
+        arguments: /DeployReportPath=deploy.sql
     - uses: azure/sql-action@v2
       with:
         connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
         path: './GitHubActionsProject/bin/Debug/GitHubActionsProject.dacpac'
-        action: 'DeployReport'
+        action: 'Publish'
         build-arguments: '-c Release' # Optional build options passed to dotnet build
     # Azure logout 
     - name: logout
